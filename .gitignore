@@ -1,0 +1,16 @@
+# System #
+##########
+.DS_Store
+
+# SASS #
+########
+style/.sass-cache/
+*.scssc
+
+# BUILD STUFF #
+###############
+debug.html
+build/grid.js
+build/grid.min.js
+tmp/
+keys.sh
