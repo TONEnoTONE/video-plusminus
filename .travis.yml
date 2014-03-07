@@ -13,7 +13,7 @@ env:
 install:
   - sudo apt-get install s3cmd
 
-script: 
+#script: 
 #- ROOT_DIR=$(pwd)
 #- cd $ROOT_DIR/compiler/
 #- ./close.sh
