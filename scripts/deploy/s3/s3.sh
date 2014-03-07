@@ -18,7 +18,6 @@ else
 	echo "uploading to tonenotone.com/${S3_Folder_Destination}/"
 	echo "########################################"
 	echo "the s3 config file: "
-	cat ${s3ScriptDir}/.s3cfg
 	s3cmd sync --config=${s3ScriptDir}/.s3cfg -Pf tmp/www/ s3://tonenotone.com/${S3_Folder_Destination}/
 fi
 
