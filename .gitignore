@@ -10,8 +10,8 @@ style/.sass-cache/
 # BUILD STUFF #
 ###############
 debug.html
-build/grid.js
-build/grid.min.js
+build/SubwayVideo.js
+build/SubwayVideo.min.js
 tmp/
 keys.sh
 scripts/deploy/s3.s3cfg
