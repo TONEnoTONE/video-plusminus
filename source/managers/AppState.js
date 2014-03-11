@@ -7,16 +7,71 @@ all the navigable screens in the app.
 
 goog.provide("managers.AppState");
 
+goog.require("managers.ViewController");
 
 /** 
 	@typedef {Object}
 */
 var AppState = {
 	/** 
+	The Finite State Machine
+	@dict
+	*/
+	fsm : {},
+	/** 
 	init the app state
 	*/
 	initialize : function(){
+		AppState.fsm = StateMachine.create({
 
+			"events": [	
+				{ "name": 'start', 				"from": 'none',   			"to": 'loading' },
+				{ "name": 'showfullscreenmap',	"from": ['loading'],		"to": 'fullscreenmap' },
+				{ "name": 'showvideoplayer',	"from": ['fullscreenmap'],	"to": 'videoplayer' }
+			],
+
+			"callbacks": {
+				// ON BEFORE
+				"onbeforestart": function(event, from, to){},
+				"onbeforeshowfullscreenmap": function(event, from, to){},
+				"onbeforeshowvideoplayer": function(event, from, to){},
+				
+				// ON SHOW
+				"onstart": function(event, from, to) { 
+					ViewController.showView(CONST.APPSTATES.LOADING);
+
+					//LoadingManager.loadApp(AppState.onAppLoaded);
+				},
+				"onshowfullscreenmap": function(event, from, to) { 
+					//ScreenController.showScreen(CONST.APPSTATES.SCREEN_SPLASH);
+				},
+				"onshowvideoplayer": function(event, from, to) { 
+					//ScreenController.showScreen(CONST.APPSTATES.SCREEN_SONGS);
+				},
+				
+				
+				// ON LEAVE
+				"onleaveloading": function(event, from, to) { 
+					//ScreenController.hideScreen(CONST.APPSTATES.SCREEN_SPLASH);
+					//return StateMachine.ASYNC;
+				},
+				"onleavefullscreenmap":  function(event, from, to) {
+					//ScreenController.hideScreen(CONST.APPSTATES.SCREEN_SONGS);
+					//return StateMachine.ASYNC;
+				},
+				"onleavevideoplayer":  function(event, from, to) { 
+					//ScreenController.hideScreen(CONST.APPSTATES.SCREEN_PARTS);
+					//return StateMachine.ASYNC;
+				},
+
+				// ON
+				"onsplash": function(event, from, to) {},
+				"onshowfullscreenmap":  function(event, from, to) {},
+				"onshowvideoplayer":  function(event, from, to) {},
+				
+				"onchangestate": function(event, from, to) {}
+			}
+	  	});
 	},
 
 	/** 
@@ -31,7 +86,7 @@ var AppState = {
 		start the fsm
 	*/
 	start : function(){
-	
+		AppState.fsm['start']();
 	},
 };
 AppState.initialize();

@@ -1,0 +1,16 @@
+/**=====
+LoadingView
+=======*/
+
+goog.provide("LoadingView");
+
+
+//the application singleton
+var LoadingView = {
+	/** */
+	initialize : function(){
+		
+	},
+};
+
+LoadingView.initialize();
