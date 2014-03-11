@@ -19,6 +19,11 @@ goog.provide("data.Const");
 */
 var CONST = {};
 
+/** 
+	the app states
+	@const
+	@enum {string}
+*/
 CONST.APPSTATES = {
 	LOADING : 'LOADING',
 	FULLSCREEN_MAP : 'FULLSCREEN_MAP'

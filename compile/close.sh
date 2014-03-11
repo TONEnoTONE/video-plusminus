@@ -16,5 +16,4 @@ python dependencies/closure-library/closure/bin/build/closurebuilder.py --root=.
 --compiler_flags="--jscomp_error=accessControls" \
 --compiler_flags="--jscomp_error=const" \
 --compiler_flags="--jscomp_error=constantProperty" \
---compiler_flags="--define='CONST.LOCKED_LOCKED=true'" \
 --compiler_flags="--warning_level=VERBOSE" 

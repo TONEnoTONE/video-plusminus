@@ -66,8 +66,8 @@ var AppState = {
 
 				// ON
 				"onsplash": function(event, from, to) {},
-				"onshowfullscreenmap":  function(event, from, to) {},
-				"onshowvideoplayer":  function(event, from, to) {},
+				"onfullscreenmap":  function(event, from, to) {},
+				"onvideoplayer":  function(event, from, to) {},
 				
 				"onchangestate": function(event, from, to) {}
 			}
