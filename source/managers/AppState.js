@@ -8,6 +8,7 @@ all the navigable screens in the app.
 goog.provide("managers.AppState");
 
 goog.require("managers.ViewController");
+goog.require("managers.LoadingManager");
 
 /** 
 	@typedef {Object}
@@ -38,9 +39,8 @@ var AppState = {
 				
 				// ON SHOW
 				"onstart": function(event, from, to) { 
+					LoadingManager.loadApp(AppState.onAppLoaded);
 					ViewController.showView(CONST.APPSTATES.LOADING);
-
-					//LoadingManager.loadApp(AppState.onAppLoaded);
 				},
 				"onshowfullscreenmap": function(event, from, to) { 
 					ViewController.showView(CONST.APPSTATES.FULLSCREEN_MAP);
@@ -81,7 +81,7 @@ var AppState = {
 	*/
 	// AppState.fsm.transition;
 	onAppLoaded : function() {
-	
+		AppState.fsm["showfullscreenmap"]();
 	},
 	/** 
 		start the fsm

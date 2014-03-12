@@ -30,9 +30,9 @@ var LoadingView = {
 		// draw the sucker
 		goog.dom.appendChild(LoadingView.div, LoadingView.textdiv);
 
-		setTimeout(function(){
-    		AppState.fsm["showfullscreenmap"]();
-    	}, 1000);
+		// setTimeout(function(){
+  //   		AppState.fsm["showfullscreenmap"]();
+  //   	}, 1000);
 		
 	},
 	/** make the screen **/

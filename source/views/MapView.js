@@ -12,6 +12,10 @@ goog.require("goog.style");
 var MapView = {
 	/** @private @type {Element} */
 	div : AppDom.MapLarge,
+	/** @private @type {Element} */
+	textdiv : null,
+	/** @private @type {Element} */
+	mapdiv : null,
 	/** */
 	initialize : function(){
 		MapView.makeScreen();
@@ -21,10 +25,16 @@ var MapView = {
 		
 	*/
 	makeScreen : function() {
-		// holder for the song buttons
+		// holder for the map
+		MapView.mapdiv = goog.dom.createDom('div', { 'id': 'mapdiv' });
+		
+
+		// holder for the text
 		MapView.textdiv = goog.dom.createDom('div', { 'id': 'textdiv' });
 		MapView.textdiv.textContent = "HI!! OMG!!! I'm a map!!!...";
+		
 		// draw the sucker
+		goog.dom.appendChild(MapView.div, MapView.mapdiv);
 		goog.dom.appendChild(MapView.div, MapView.textdiv);
 	},
 	/** 

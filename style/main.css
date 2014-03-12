@@ -43,6 +43,14 @@ IMPORTS
   right: 0;
   left: 0; }
 
+#mapdiv {
+  background: url("../assets/images/map/nyc-subway-map-hi-res-top-left.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
 #textdiv {
   /*
   top: 50%;
