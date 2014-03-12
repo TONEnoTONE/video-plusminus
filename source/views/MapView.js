@@ -6,6 +6,8 @@ goog.provide("views.MapView");
 
 goog.require("views.AppDom");
 
+goog.require("goog.style");
+
 //the application singleton
 var MapView = {
 	/** @private @type {Element} */
