@@ -8,6 +8,7 @@ goog.provide("managers.ViewController");
 goog.require("data.Const");
 goog.require("views.LoadingView");
 goog.require("views.MapView");
+goog.require("views.VideoView");
 
 /** 
 	@typedef {Object}
@@ -26,6 +27,7 @@ var ViewController = {
 		// set up available screens
 		ViewController.screens[CONST.APPSTATES.LOADING] = LoadingView;
 		ViewController.screens[CONST.APPSTATES.FULLSCREEN_MAP] = MapView;
+		ViewController.screens[CONST.APPSTATES.VIDEO_PLAYER] = VideoView;
 	},
 
 	/** 

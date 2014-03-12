@@ -27,12 +27,15 @@ var AppDom = {
 	LoadingScreen : goog.dom.createDom("div", {"id" : "LoadingScreen", "class" : "screen"}),
 	/** @type {Element} */
 	MapLarge : goog.dom.createDom("div", {"id" : "MapLarge", "class" : "screen"}),
+	/** @type {Element} */
+	VideoView : goog.dom.createDom("div", {"id" : "VideoView", "class" : "screen"}),
 	
 	//add them in the right places
 	initialize : function(){
 		goog.dom.appendChild(document.body, AppDom.Shell);
 		goog.dom.appendChild(AppDom.Shell, AppDom.LoadingScreen);
 		goog.dom.appendChild(AppDom.Shell, AppDom.MapLarge);
+		goog.dom.appendChild(AppDom.Shell, AppDom.VideoView);
 	},
 }
 

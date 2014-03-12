@@ -47,7 +47,7 @@ var AppState = {
 					//ScreenController.showScreen(CONST.APPSTATES.SCREEN_SPLASH);
 				},
 				"onshowvideoplayer": function(event, from, to) { 
-					//ScreenController.showScreen(CONST.APPSTATES.SCREEN_SONGS);
+					ViewController.showView(CONST.APPSTATES.VIDEO_PLAYER);
 				},
 				
 				

@@ -1,0 +1,15 @@
+#VideoView {
+	position: absolute;
+	/*background-color : $gray;*/
+	color: $white;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#videoplayer {
+	width: 640px;
+	height: auto;
+	@include center-align;
+}

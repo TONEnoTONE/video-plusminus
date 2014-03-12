@@ -1,23 +1,26 @@
 #MapLarge {
-	background-color : $gray;
-	color: $white;
 	/*@include bigFont;*/
-	/*background: url("../assets/images/splash/stripe.png");*/
 	/*@include checkerBackground;*/
 	position: absolute;
+	background-color : $gray;
+	color: $white;
 	top: 0;
-	bottom: 0;
-	right: 0;
 	left: 0;
 }
 
 #mapdiv {
-	background : url("../assets/images/map/nyc-subway-map-hi-res-top-left.png");
+	/*background : url("../assets/images/map/nyc-subway-map-hi-res-top-left.png");*/
 	position: absolute;
 	top: 0;
-	bottom: 0;
-	right: 0;
 	left: 0;
+	-webkit-transform: translate3d( 0, 0, 0 );
+	-webkit-transition: -webkit-transform 2000ms;
+	transition: transform 2000ms;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
 }
 
 #textdiv {
