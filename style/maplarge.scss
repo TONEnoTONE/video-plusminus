@@ -12,9 +12,9 @@
 }
 
 #textdiv {
-	position: absolute;
+	/*
 	top: 50%;
 	left: 50%;
-
-	/*@include vertical-align;*/
+	*/
+	@include center-align;
 }
