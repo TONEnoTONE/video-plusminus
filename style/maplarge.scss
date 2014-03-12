@@ -1,0 +1,20 @@
+#MapLarge {
+	background-color : $gray;
+	color: $white;
+	/*@include bigFont;*/
+	/*background: url("../assets/images/splash/stripe.png");*/
+	/*@include checkerBackground;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+#textdiv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	/*@include vertical-align;*/
+}

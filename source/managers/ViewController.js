@@ -32,9 +32,15 @@ var ViewController = {
 		@param {CONST.APPSTATES} view
 	*/
 	showView : function(view) {
-		var element = ViewController.screens[view].div;
-		goog.dom.classes.add(element, "visible");
-		console.log("hi");
+		ViewController.screens[view].showScreen();
+	},
+
+	/** 
+		@param {CONST.APPSTATES} view
+	*/
+	hideView : function(view) {
+		// track that we are here
+		ViewController.screens[view].hideScreen();
 	}
 };
 ViewController.initialize();

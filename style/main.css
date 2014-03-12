@@ -1,7 +1,48 @@
 /*=============================================================================
 IMPORTS
 =============================================================================*/
-/*@import "SubwayVideo";*/
+/*=============================================================================
+	UTILS
+=============================================================================*/
+/*=============================================================================
+	COLORS
+=============================================================================*/
+#LoadingScreen {
+  background-color: #ff7b42;
+  color: white;
+  /*@include bigFont;*/
+  /*background: url("../assets/images/splash/stripe.png");*/
+  /*@include checkerBackground;*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+#textdiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*@include vertical-align;*/ }
+
+#MapLarge {
+  background-color: #a8a8a8;
+  color: white;
+  /*@include bigFont;*/
+  /*background: url("../assets/images/splash/stripe.png");*/
+  /*@include checkerBackground;*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+#textdiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*@include vertical-align;*/ }
+
 body {
   /*width: $screenWidth;
   @include screenHeight;*/

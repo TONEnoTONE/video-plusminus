@@ -43,6 +43,7 @@ var AppState = {
 					//LoadingManager.loadApp(AppState.onAppLoaded);
 				},
 				"onshowfullscreenmap": function(event, from, to) { 
+					ViewController.showView(CONST.APPSTATES.FULLSCREEN_MAP);
 					//ScreenController.showScreen(CONST.APPSTATES.SCREEN_SPLASH);
 				},
 				"onshowvideoplayer": function(event, from, to) { 

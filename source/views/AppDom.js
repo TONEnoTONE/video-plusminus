@@ -26,13 +26,13 @@ var AppDom = {
 	/** @type {Element} */
 	LoadingScreen : goog.dom.createDom("div", {"id" : "LoadingScreen", "class" : "screen"}),
 	/** @type {Element} */
-	BigMapHolder : goog.dom.createDom("div", {"id" : "BigMapHolder", "class" : "screen"}),
+	MapLarge : goog.dom.createDom("div", {"id" : "MapLarge", "class" : "screen"}),
 	
 	//add them in the right places
 	initialize : function(){
 		goog.dom.appendChild(document.body, AppDom.Shell);
 		goog.dom.appendChild(AppDom.Shell, AppDom.LoadingScreen);
-		goog.dom.appendChild(AppDom.Shell, AppDom.BigMapHolder);
+		goog.dom.appendChild(AppDom.Shell, AppDom.MapLarge);
 	},
 }
 
