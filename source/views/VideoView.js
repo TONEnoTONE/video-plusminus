@@ -40,9 +40,9 @@ var VideoView = {
 	showScreen : function() {
 		goog.style.setElementShown(VideoView.div, true);
 		VideoView.videoplayer.load();
-		VideoView.videoplayer.oncanplaythrough = function(){
-			VideoView.videoplayer.play();
-		}
+		//VideoView.videoplayer.oncanplaythrough = function(){
+		VideoView.videoplayer.play();
+		//}
 	},
 	/** 
 	*/
