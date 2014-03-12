@@ -37,7 +37,7 @@ var MapView = {
 	makeScreen : function() {
 		// holder for the map
 		MapView.mapdiv = goog.dom.createDom('div', { 'id': 'mapdiv' });
-		mapimage = new Image();
+		var mapimage = new Image();
 		mapimage.src = "./assets/images/map/nyc-subway-map-hi-res-top-left.png";
 		mapimage.id = "map";
 		// holder for the text
